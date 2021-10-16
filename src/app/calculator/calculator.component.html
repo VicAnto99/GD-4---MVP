@@ -1,0 +1,168 @@
+<div class="container con">
+    <div class="row">
+        <p class="h1">Bitcoin</p>
+    </div>
+    <div class="row" style="height: 305px;">
+        <div class="col" style="margin-right: 30px;">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">¿Qué es el bitcoin?</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">¿Es una modeda virtual?</h6>
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <p class="card-text">Bitcoin es una moneda virtual o un medio de intercambio electrónico que sirve para adquirir productos y servicios como cualquier otra moneda.</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p class="card-text">Pero esta moneda es descentralizada, es decir que no existe una autoridad o ente de control que sea responsable de su emisión y registro de sus movimientos.</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p class="card-text">Consiste en una clave criptográfica que se asocia a un monedero virtual, el cual descuenta y recibe pagos.</p>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col" style="margin-right: 30px;">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">¿Cómo funciona el bitcoin?</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">¿Es necesario saber de programación?</h6>
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <p class="card-text">Para poder hacer un intercambio, cada usuario debe tener una clave criptográfica y el sistema permite descontar la cantidad de bitcoin a quien compra y aumentar la cantidad de bitcoin de la cuenta de quien vende.</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p class="card-text">No tiene intermediarios al realizar un cobro o pago. Puede contar con varias cuentas y tiene un funcionamiento ininterrumpido las 24 horas.</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p class="card-text">Hay que tener en cuenta que la moneda y la clave asociada al código criptográfico deben ser verificadas para su ejecución.</p>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Datos curiosos</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">¿Es segura?</h6>
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <p class="card-text">El único respaldo de esa moneda son los algoritmos tecnológicos los cuales, hasta el momento y aunque existe el riesgo, no han podido ser penetrados.</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p class="card-text">Esta criptomoneda no puede ser intervenida ni las cuentas pueden ser congeladas. No es necesario revelar la identidad al hacer negocios.</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p class="card-text">Es posible encontrar una alta volatilidad de su precio por su carácter especulativo y su movimiento fluctúa por oferta y demanda.</p>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <p class="h1">Calculadora</p>
+        <div class="col">
+            <select id="men" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected value="1">Selecciona el intercambio que quiera hacer</option>
+                <option value="2">Bitcoin a Peso mexicano</option>
+                <option value="3">Peso mexicano a Bitcoin</option>
+
+            </select>
+        </div>
+        <div class="col">
+            <input class="btn btn-secondary btn-lg" type="button" value="Enviar" (click)="myFunc()">
+        </div>
+    </div>
+    <div class="row" id="op"style="display:block">
+        <p class="h1">Selecciona una opción</p>
+    </div>
+    <div class="row" id="bit"style="display:none">
+        <div class="col">
+            <div class="input-group">
+                <span class="input-group-text">Bitcoin</span>
+                <input type="number" class="form-control" placeholder="1" aria-label="Recipient's username with two button addons">
+                <button class="btn btn-outline-secondary" type="button">Convertir</button>
+                <button class="btn btn-outline-secondary" type="button">Borrar</button>
+            </div>
+        </div>
+        <div class="col">
+            <p>'variable' Bitcoins son 'variable' Pesos mexicanos</p>
+        </div>
+    </div>
+    <div class="row" id="mx" style="display:none">
+        <div class="col">
+            <div class="input-group">
+                <span class="input-group-text">Pesos mexicanos</span>
+                <input type="number" class="form-control" placeholder="100" aria-label="Recipient's username with two button addons">
+                <button class="btn btn-outline-secondary" type="button">Convertir</button>
+                <button class="btn btn-outline-secondary" type="button">Borrar</button>
+            </div>
+        </div>
+        <div class="col">
+            <p>'variable' Pesos mexicanos son 'variable' Bitcoins</p>
+        </div>
+    </div>
+</div>
+<script>
+    /*
+    //Opción del menú calculadora
+    var op = document.getElementById("op");
+    var bit = document.getElementById("bit");
+    var mx = document.getElementById("mx");
+    function menu(){
+        var value_x = document.getElementById("men").value;
+        document.getElementById("prueba").innerHTML = value_x;
+        console.log("Funciona" + value_x);
+        if(value_x === "1"){
+            op.style.display = "block";
+            bit.style.display = "none";
+            mx.style.display = "none";
+        }
+        else if(value_x === "2"){
+            op.style.display = "none";
+            bit.style.display = "block";
+            mx.style.display = "none";
+        }
+        else if(value_x === "3"){
+            op.style.display = "none";
+            bit.style.display = "none";
+            mx.style.display = "block";
+        }
+    }
+    
+    
+    */
+</script>
+
