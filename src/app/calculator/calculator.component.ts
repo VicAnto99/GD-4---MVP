@@ -12,8 +12,9 @@ export class CalculatorComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  myFunc(){
-    console.log("funciona");
+  changes : number = 1236849.04;
+
+  seleccion(){
     var e = (document.getElementById("men")) as HTMLSelectElement;
     var sel = e.selectedIndex;
     var opt = e.options[sel];
@@ -36,5 +37,23 @@ export class CalculatorComponent implements OnInit {
       bit.style.display='none';
       mx.style.display='block';
     }
+  }
+
+  bit_a_mx(){
+    let CurValue : number = parseFloat((<HTMLInputElement>document.getElementById("bit_input")).value);
+    const app = document.getElementById("text_bit");
+    const p = document.createElement("p");
+    var bitcoin : number = CurValue * this.changes;
+    p.textContent = CurValue +" Bitcoins son " + bitcoin + " Pesos mexicanos";
+    app?.appendChild(p);
+  }
+
+  mx_a_bit(){
+    let CurValue : number = parseFloat((<HTMLInputElement>document.getElementById("mx_input")).value);
+    const app = document.getElementById("text_mx");
+    const p = document.createElement("p");
+    var bitcoin : number = CurValue / this.changes;
+    p.textContent = CurValue +" Pesos mexicanos son " + bitcoin + " Bitcoins";
+    app?.appendChild(p);
   }
 }

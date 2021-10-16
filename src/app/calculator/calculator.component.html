@@ -98,12 +98,10 @@
                 <option selected value="1">Selecciona el intercambio que quiera hacer</option>
                 <option value="2">Bitcoin a Peso mexicano</option>
                 <option value="3">Peso mexicano a Bitcoin</option>
-
-                
             </select>
         </div>
         <div class="col">
-            <input class="btn btn-secondary btn-lg" type="button" value="Enviar" (click)="myFunc()">
+            <input class="btn btn-secondary btn-lg" type="button" value="Selecciona" (click)="seleccion()">
         </div>
     </div>
     <div class="row" id="op"style="display:block">
@@ -113,57 +111,25 @@
         <div class="col">
             <div class="input-group">
                 <span class="input-group-text">Bitcoin</span>
-                <input type="number" class="form-control" placeholder="1" aria-label="Recipient's username with two button addons">
-                <button class="btn btn-outline-secondary" type="button">Convertir</button>
-                <button class="btn btn-outline-secondary" type="button">Borrar</button>
+                <input type="number" id="bit_input" class="form-control" placeholder="1" aria-label="Recipient's username with two button addons">
+                <button class="btn btn-outline-secondary" type="button" (click)="bit_a_mx()">Convertir</button>
             </div>
         </div>
-        <div class="col">
-            <p>'variable' Bitcoins son 'variable' Pesos mexicanos</p>
+        <div class="col" id="text_bit">
+          <div class="h3">Tus resultados son:</div>
         </div>
     </div>
     <div class="row" id="mx" style="display:none">
         <div class="col">
             <div class="input-group">
                 <span class="input-group-text">Pesos mexicanos</span>
-                <input type="number" class="form-control" placeholder="100" aria-label="Recipient's username with two button addons">
-                <button class="btn btn-outline-secondary" type="button">Convertir</button>
-                <button class="btn btn-outline-secondary" type="button">Borrar</button>
+                <input type="number" id="mx_input" class="form-control" placeholder="100" aria-label="Recipient's username with two button addons">
+                <button class="btn btn-outline-secondary" type="button" (click)="mx_a_bit()">Convertir</button>
             </div>
         </div>
-        <div class="col">
-            <p>'variable' Pesos mexicanos son 'variable' Bitcoins</p>
+        <div class="col" id="text_mx">
+          <div class="h3">Tus resultados son:</div>
         </div>
     </div>
 </div>
-<script>
-    /*
-    //Opción del menú calculadora
-    var op = document.getElementById("op");
-    var bit = document.getElementById("bit");
-    var mx = document.getElementById("mx");
-    function menu(){
-        var value_x = document.getElementById("men").value;
-        document.getElementById("prueba").innerHTML = value_x;
-        console.log("Funciona" + value_x);
-        if(value_x === "1"){
-            op.style.display = "block";
-            bit.style.display = "none";
-            mx.style.display = "none";
-        }
-        else if(value_x === "2"){
-            op.style.display = "none";
-            bit.style.display = "block";
-            mx.style.display = "none";
-        }
-        else if(value_x === "3"){
-            op.style.display = "none";
-            bit.style.display = "none";
-            mx.style.display = "block";
-        }
-    }
-    
-    
-    */
-</script>
 
