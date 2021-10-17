@@ -1,5 +1,7 @@
 # CryptocurrencyCalculator GD-4---MVP
 
+Desarrolla un producto mínimo viable utilizando tecnologías de desarrollo web. Algunas ideas que puedes hacer: -Acortador de URLs-Convertidor de bitcoins -Manejador de paletas de colores-Manejador de snippets de código -Cuestionario de salud mental para empleados-Lista de compras compartida -Herramienta para buscar correos dentro de un sitioGraba un video que explique de qué se trata tu producto y como se utiliza.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 
 ## Development server
